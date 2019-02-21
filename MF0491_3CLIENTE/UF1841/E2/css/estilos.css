@@ -1,0 +1,264 @@
+*{
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	box-sizing: border-box;
+}
+/* aplicamos margenes y background a la barra de navegacion*/
+nav{
+	width: 475px;
+	margin: 10px ;
+	padding: 5px;
+	background: white;
+	margin-left: 475px;	
+}
+/* quitamos estilo de lista a nuestro menu*/
+nav ul {
+	list-style: none;
+
+}
+
+/* damos posicion relativa y ponemos en bloque en linea los elementos directos li incluidos en la clase lista*/
+.lista > li {
+	position: relative;
+	display:inline-block; 
+}
+/* damos formato a la fuente de la lista*/
+.lista > li > a  {
+	
+padding: 20px;
+	color: grey;
+	text-decoration: none;
+	font-family: arial black;
+	font-size: 20px;
+	border-right: 2px solid black;
+}
+/* con la pseudoclase hover hacemos que al pasar el raton por los elementos li cambie de color*/
+.lista li a:hover {
+	color: green;
+transition: all .3s;
+}
+
+/* aplicamos a la sublista los estilos para mantenerlos ocultos en principio */
+.sublista  {
+left: -45px;
+top: 50px;
+	position: absolute;
+	display: inline-block;
+	width: 130%;
+	
+	color: black;
+	
+	visibility: hidden;
+	opacity: 0;
+	transition: opacity 1s;
+}
+
+.sublista li a {
+	padding: 5px;
+	
+	position: relative;
+background: white;
+	display: block;
+	width: 135px;
+	color:black;
+	text-decoration: none;
+	border-bottom: 2px solid black;
+
+}
+/* con la pseudoclase hover hacemos que al pasar el raton por los elementos principales de nuestro menu aparezca nuestro submenu*/
+.lista li:hover .sublista{
+	visibility: visible;
+	opacity: 1;
+}
+
+/* con nuestra clase jugadores aplicamos los estilos para que no aparezcan los elementos en principio*/
+.jugadores {
+		position:relative;
+		visibility: hidden;
+		opacity: 0;
+		
+}
+
+/* posicionamos los elementos*/
+.jugadores{
+	left: 95px;
+	bottom: 60px;
+}
+.jugadores li a{
+	
+	display: block;
+
+		background: white;
+		color: black;
+		position: relative;
+		
+		border-bottom: 2px solid black;
+
+	}
+	.jugadores li a {
+		right: -3px;
+		top:30px;
+		
+	}
+
+	/* con la pseudoclase hover hacemos que no aparezcan los elementos hasta que no pasemos el rato sobre el elemento principal*/
+	.sublista li:hover .jugadores{
+		visibility: visible;
+		opacity: 1;
+		transition: visible 0.5s;
+	}
+
+	/* con la clase entrenador aplicamos practicamente los mismo estilos que con la clase anterior*/
+.entrenador {
+		position:relative;
+		visibility: hidden;
+		opacity: 0;
+
+		
+}
+.sublista li:hover .entrenador{
+	visibility: visible;
+	opacity: 1;
+	transition:0.6s; 
+}
+.entrenador li a{
+	
+	display: block;
+
+		background: white;
+		color: black;
+		position: relative;
+		
+		border-bottom: 2px solid black;
+left:98px;
+bottom: 47px;
+	}
+.sublista .entrenador{
+	display: block;
+	position: absolute;
+}
+	
+	
+
+	/*   */
+
+/* aplicamos el background a todo el body*/
+
+body {
+	background-color: #A79C2E      ;
+}
+
+/* aplicos background al header y un overflow auto para que nuestros submenu no se sobrepongan al body*/
+header {
+	background: black;
+	overflow: auto;
+	border: 3px solid yellow;
+	
+
+}
+h1{
+	margin:25px;
+}
+
+/*aplicamos un margen de 25pixeles a todos los elementos p*/
+
+	 p{
+		margin: 25px;
+		font-family: arial;
+		font-size: 18px;
+	}
+/* aplicamos a todos los pie de paginas una fuente*/
+figcaption {
+	font-family: arial black;
+
+
+
+}
+h3{
+	
+	border: black 2px outset;
+
+	
+}
+h2 {
+	margin-left: 25px;
+	font-family: arial black;
+	font-size: 2em;
+
+
+}
+h2{
+	border: black 2px  outset;
+	border-radius: 2em;
+}
+
+/* aplicamos a nuestras tabalas un formato con bordes*/
+table {
+	border: white 4px outset;
+	border-radius: 15px;
+}
+/* aplicamos el formato a nuestro cuestionario*/
+form{
+
+	margin: 0 auto;
+	width: 400px;
+	padding: 1em;
+	border: 1px solid black;
+	border-radius: 1em;
+	align-content: right;
+}
+ div+div+div{
+	margin-top: 1em;
+}
+/* aplicamos formato a los elementos que componen el cuestionario*/
+label {
+	display: inline-block;
+	width: 100px;
+	text-align: right;
+}
+
+/* aplicamos formato al cajetin para enviar mensaje*/
+input, textarea{
+	font: 1em sans-serif;
+	width: 300px;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	border: 1px solid #999;
+}
+/* aplicamos pseudoclase focus tras pulsar cambie el color del borde*/
+input:focus, textarea:focus{
+	border-color: #000;
+}
+/* alineamos nuestra area de texto*/
+textarea{
+	vertical-align: top;
+	height: 5em;
+	resize: vertical;
+}
+.button {
+	padding-left: 100px;
+}
+button{
+	margin-left: .5em;
+}
+select {
+	margin-bottom: 30px;
+}
+
+.escudo{
+	margin-left: 25px;
+	margin-top: 25px;
+}
+.cbc{
+	font-family: modern;
+	color: white;
+	font-size: 80px;
+	margin-left: 380px;
+	margin-right: 0;
+	margin-top: -175px;
+
+}
+figcaption{
+	align-items: center;
+}
+

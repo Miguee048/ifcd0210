@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSpy v2011 sp1 (http://www.altova.com) by End User (free.org) -->
+<!DOCTYPE cbcanarias SYSTEM "C:\Users\luism\Desktop\ACIVIDADE2\dtd cb canarias.dtd">
+<cbcanarias>
+	<equipo>
+		<jugadores>
+			<bases>
+				<jugador>
+					<nombre>Rodrigo San Miguel</nombre>
+					<dorsal>00</dorsal>
+				</jugador>
+				<jugador>
+					<nombre>Ferran Basas</nombre>
+					<dorsal>10</dorsal>
+				</jugador>
+				<jugador>
+					<nombre>Davin White</nombre>
+					<dorsal>34</dorsal>
+				</jugador>
+			</bases>
+			<escoltas>
+				<jugador>
+					<nombre>Nico Richotti</nombre>
+					<dorsal>5</dorsal>
+				</jugador>
+				<jugador>
+					<nombre>Thad Macfadden</nombre>
+					<dorsal>12</dorsal>
+				</jugador>
+				<jugador>
+					<nombre>Luca_Staiger</nombre>
+					<dorsal>01</dorsal>
+				</jugador>
+			</escoltas>
+			<aleros>
+				<jugador>
+					<nombre>Javier_Beiran</nombre>
+					<dorsal>33</dorsal>
+				</jugador>
+				<jugador>
+					<nombre>Nico Brusino</nombre>
+					<dorsal>09</dorsal>
+				</jugador>
+			</aleros>
+			<ala_pivots>
+				<jugador>
+					<nombre>Tim Abromaitis</nombre>
+					<dorsal>21</dorsal>
+				</jugador>
+				<jugador>
+					<nombre>Gillet</nombre>
+					<dorsal>31</dorsal>
+				</jugador>
+				<jugador>
+					<nombre>Tomasz Gielo</nombre>
+					<dorsal>06</dorsal>
+				</jugador>
+			</ala_pivots>
+			<pivots>
+				<jugador>
+					<nombre>Colton Iverson</nombre>
+					<dorsal>04</dorsal>
+				</jugador>
+				<jugador>
+					<nombre>Sebas Saiz</nombre>
+					<dorsal>11</dorsal>
+				</jugador>
+				<jugador>
+					<nombre>Petit Niang</nombre>
+					<dorsal>07</dorsal>
+				</jugador>
+			</pivots>
+		</jugadores>
+		<cuerpo_tecnico>
+			<entrenador>Txus Vidorreta</entrenador>
+			<ayudantes_entrenador>
+				<nombre>Marco Justo</nombre>
+				<nombre>Nacho Yañez</nombre>
+			</ayudantes_entrenador>
+		</cuerpo_tecnico>
+	</equipo>
+</cbcanarias>
