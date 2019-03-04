@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<titile> </titile>
+	<link rel="stylesheet" type="text/css" href="css/estilosp1.css">
+</head>
+
+<header>
+
+<marquee align="center" onmouseout="this.start()" onmouseover="this.stop()" behavior="slide" scrolldelay="5" >Bienvenidos a la aplicacion Calculadora </marquee>
+</header>
+<body onload="startTime();">
+	<div id="clockdate">
+  <div class="clockdate-wrapper">
+    <div id="clock"></div>
+    <div id="date"></div>
+  </div>
+</div>
+	<img id="gif" src="imagenes/gif calculadora.gif" >
+	<p>  </p>
+	<script type="text/javascript">
+
+		function calculo(){
+			var tasa = 6.5;
+			var cantidad = Number(document.getElementById('cantidad').value);
+			var igic = (cantidad * tasa)/100;
+			document.getElementById('impuesto').value = igic;
+			var res = cantidad + igic;
+			document.getElementById('totalimp').value = res;
+			
+		};
+
+		
+		
+
+		function pagina(){
+			var a;
+			
+			a = window.prompt("Introduzca un numero menor de 10? "," ");
+				if ( a <1, a < 10){
+					alert("se va redireccionar a la aplicacion");
+					directorio();
+				} else{
+					alert("Vuelva a intentarlo");
+				}
+		}
+
+
+		function directorio(){
+			window.open("calculadora-html.html", 'blank');
+			
+		
+		
+}
+function startTime() {
+    var today = new Date();
+    var hr = today.getHours();
+    var min = today.getMinutes();
+    var sec = today.getSeconds();
+    ap = (hr < 12) ? "<span>AM</span>" : "<span>PM</span>";
+    hr = (hr == 0) ? 12 : hr;
+    hr = (hr > 12) ? hr - 12 : hr;
+    hr = checkTime(hr);
+    min = checkTime(min);
+    sec = checkTime(sec);
+    document.getElementById("clock").innerHTML = hr + ":" + min + ":" + sec + " " + ap;
+    
+    var months = ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio', 'Julio', 'Agosto', 'Septiembre', 'Octubre', 'Noviembre', 'Diciembre'];
+    var days = ['Lunes', 'Martes', 'Miercoles', 'Jueves', 'Viernes', 'Sabado', 'Domingo'];
+    var curWeekDay = days[today.getDay()];
+    var curDay = today.getDate();
+    var curMonth = months[today.getMonth()];
+    var curYear = today.getFullYear();
+    var date = curWeekDay+", "+curDay+" "+curMonth+" "+curYear;
+    document.getElementById("date").innerHTML = date;
+    
+    var time = setTimeout(function(){ startTime() }, 500);
+}
+function checkTime(i) {
+    if (i < 10) {
+        i = "0" + i;
+    }
+    return i;
+}
+
+	</script>
+
+	<table id='impuestos'>
+		<caption>Otras herramientas de calculo</caption>
+		<tr>
+	<td>
+	Cantidad: <input id="cantidad" type="text"  placeholder=" Inserte Cantidad" onchange="calculo();">
+</td>
+</tr>
+<tr>
+<td>
+	IGIC: <input id="impuesto" type="text" placeholder="IGIC" onchange="calculo();">
+	</td>
+</tr>
+<tr>
+	<td>
+		TOTAL:<input id="totalimp" type="text" placeholder="Resultado">
+	</td>
+</tr>
+</table>
+
+<p>Pulse aqui para ir a la calculadora:<input id="boton" type="button" value="Ejecutar"  onclick="pagina()"></p>
+	
+</body>
+</html>
+
