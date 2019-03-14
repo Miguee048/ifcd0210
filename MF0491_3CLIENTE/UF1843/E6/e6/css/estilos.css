@@ -1,0 +1,445 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: sans-serif;
+}
+
+main {
+	width: 100%;
+	height: auto;
+	background-image: url('fondo.jpg');
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
+.content-all{
+	width: 100%;
+	max-width: 1000px;
+	background-color: rgba(37, 67, 244,0.93);
+	margin: auto;
+	margin-top: 80px;
+	border: 1px solid white;
+
+}
+header{
+	width: 100%;
+	position: fixed;
+	background: #1933C8;
+	left: 0;
+	top: 0;
+	height: 60px;
+}
+#check{
+	display: none;
+}
+#check:checked ~ .menu{
+width: 400px;
+
+}
+.menu{
+
+position: fixed;
+top: 60px;
+width: 0px;
+height: 100vh;
+background:#8292EE;
+transition: all 500ms cubic-bezier(1,0,0,1);
+transition-timing-function: cubic-bezier(1,0,0,1);
+overflow: hidden;
+height: auto;
+
+}
+.menu li{
+	list-style: none;
+	padding: 15px;
+	color: white;
+	cursor: pointer;
+	transition: all 300ms;
+	display: block;
+	width: 400px;
+}
+.menu li a:link{
+	text-decoration: none;
+}
+.menu li a{
+	font-family: Comic Sans, sans-serif;
+	color: white;
+	font-size: 20px;
+}
+.menu li:hover{
+	background: rgba(0,0,0,0.2);
+}
+article{
+	padding: 40px;
+}
+.content-all label{
+	position: fixed;
+	width: 100%;
+	max-width: 1000px;
+	top:15px;
+	font-size: 26px;
+	cursor: pointer;
+	z-index: 10;
+}
+.content-all .logo {
+	
+position: relative;
+top: -78px;
+	
+	width: 55px;
+	height: 55px;
+	display: block;
+	margin: auto;
+
+}
+.content-all h2{
+	position: fixed;
+	width: 100%;
+	max-width: 1000px;
+	top:14px;
+	font-size: 26px;
+	text-align: right;
+	color: white;
+}
+article h1{
+	font-size: 30px;
+	color: white;
+	font-weight: 100px;
+	margin-top: 0px;
+
+}
+article p{
+	padding-top: 20px;
+	color: white;
+	text-indent: 1cm;
+}
+
+article img{
+	width: 100%;
+	border: 4px solid white;
+	margin-top: 40px;
+}
+body{
+	height: 1000px;
+}
+ body article img{
+	overflow-x: scroll;
+	overflow-y: hidden;
+}
+.slider {
+	width: 95%;
+	margin: auto;
+	overflow: hidden;
+}
+
+.slider ul {
+	display: flex;
+	padding: 0;
+	width: 400%;
+	
+	animation: cambio 20s infinite alternate linear;
+}
+
+.slider li {
+	width: 100%;
+	list-style: none;
+}
+
+.slider img {
+	width: 100%;
+}
+
+@keyframes cambio {
+	0% {margin-left: 0;}
+	20% {margin-left: 0;}
+	
+	25% {margin-left: -100%;}
+	45% {margin-left: -100%;}
+	
+	50% {margin-left: -200%;}
+	70% {margin-left: -200%;}
+	
+	75% {margin-left: -300%;}
+	100% {margin-left: -300%;}
+}
+
+.torneos h2{
+	font-family: Times New Roman, sans-serif;
+	font-size: 40px;
+	margin-top: 25px ;
+}
+.torneos h2 p{
+	font-family: Comic Sans, sans-serif;
+	font-size: 25px;
+	padding: 20px;
+
+}
+.torneos p{
+	text-indent: 1cm;
+}
+.torneos{
+	width: 100%;
+	max-width: 1000px;
+	margin: auto;
+	padding: 40px;
+}
+.torneos h3{
+	text-align: center;
+	font-family: Comic Sans, sans-serif;
+	font-size: 30px;
+	margin-top: 15px;
+}
+.torneos .proximos{
+	margin: auto;
+}
+.proximos img{
+	margin-left: 45px;
+	margin-top: 25px;
+}
+figcaption{
+	font-family: Comic Sans, cursive;
+	font-size: 15px;
+}
+
+.torneos{
+	background: #1933C8;
+	color: white;
+}
+.tpremios{
+	width:auto;
+	border: 1px solid white;
+	padding: 20px;
+	margin-top: 40px;
+margin-left: 90px;
+
+}
+.tpremios tr td{
+	width: 25%;
+	text-align: center;
+	border: 1px solid white;
+	padding: 20px;
+}
+.torneos img:hover{
+	width: 500px;
+	height: 500px;
+}
+
+html  p:hover{
+	font-size: 45px;
+	background-color: black;
+	color: yellow;
+}
+.torneos:hover{
+	font-size: 45px;
+	background-color: black;
+	color: yellow;
+
+}
+.premios:hover{
+	font-size: 45px;
+	background-color: black;
+	color: yellow;
+
+}
+.noticias:hover{
+	font-size: 45px;
+	background-color: black;
+	color: yellow;
+
+}
+.foro h2{
+	font-family: Times New Roman, sans-serif;
+	font-size: 40px;
+	margin-top: 25px ;
+}
+.foro h2 p{
+	font-family: Comic Sans, sans-serif;
+	font-size: 25px;
+	padding: 20px;
+
+}
+.foro p{
+	text-indent: 1cm;
+}
+.foro{
+	width: 100%;
+	max-width: 1000px;
+	margin: auto;
+	padding: 40px;
+}
+.foro h3{
+	text-align: center;
+	font-family: Comic Sans, sans-serif;
+	font-size: 30px;
+	margin-top: 15px;
+}
+.foro{
+	background: #1933C8;
+	color: white;
+}
+
+
+
+
+
+html table:hover td{
+font-size: 35px;
+}
+.noticias{
+	background: #1933C8;
+	color: white;
+}
+.icono{
+	height: 120px;
+	width: 120px;
+	display: inline-block;
+	padding: 20px;
+	cursor: pointer;
+	position: fixed;
+	bottom: 25px;
+	right: 25px;
+	background-size: cover;
+	background: black;
+	color:white;
+
+	}
+	#video{
+		display: block;
+		margin: auto;
+	}
+
+form{
+
+	margin: 0 auto;
+	width: 400px;
+	padding: 1em;
+	border: 1px solid black;
+	border-radius: 1em;
+	align-content: right;
+}
+ div+div+div{
+	margin-top: 1em;
+}
+/* aplicamos formato a los elementos que componen el cuestionario*/
+ form label {
+	display: inline-block;
+	width: 100px;
+	text-align: right;
+}
+
+/* aplicamos formato al cajetin para enviar mensaje*/
+input, textarea{
+	font: 1em sans-serif;
+	width: 300px;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	border: 1px solid yellow;
+}
+/* aplicamos pseudoclase focus tras pulsar cambie el color del borde*/
+input:focus, textarea:focus{
+	border-color: yellow solid 2px;
+}
+/* alineamos nuestra area de texto*/
+textarea{
+	vertical-align: top;
+	height: 5em;
+	resize: vertical;
+}
+ form .button {
+	padding-left: 100px;
+}
+form button{
+	margin-left: .5em;
+}
+select {
+	margin-bottom: 30px;
+}
+.noticias h2{
+	font-family: Times New Roman, sans-serif;
+	font-size: 40px;
+	margin-top: 25px ;
+}
+.noticias h2 p{
+	font-family: Comic Sans, sans-serif;
+	font-size: 25px;
+	padding: 20px;
+
+}
+.noticias p{
+	text-indent: 1cm;
+}
+.noticias{
+	width: 100%;
+	max-width: 1000px;
+	margin: auto;
+	padding: 40px;
+	background: #1933C8;
+	color: white;
+}
+.noticias h3{
+	text-align: center;
+	font-family: Comic Sans, sans-serif;
+	font-size: 30px;
+	margin-top: 15px;
+}
+.premios h2{
+	font-family: Times New Roman, sans-serif;
+	font-size: 40px;
+	margin-top: 25px ;
+}
+.premios h2 p{
+	font-family: Comic Sans, sans-serif;
+	font-size: 25px;
+	padding: 20px;
+
+}
+.premios p{
+	text-indent: 1cm;
+}
+.premios{
+	width: 100%;
+	max-width: 1000px;
+	margin: auto;
+	padding: 40px;
+}
+.premios h3{
+	text-align: center;
+	font-family: Comic Sans, sans-serif;
+	font-size: 30px;
+	margin-top: 15px;
+}
+
+.premios{
+	background: #1933C8;
+	color: white;
+}
+#play {
+	width: auto;
+	box-shadow: 3px 4px yellow;
+	border-radius: 15px;
+	height: 30px;
+}
+#pausa {
+	width: auto;
+	box-shadow: 3px 4px yellow;
+	border-radius: 15px;
+	height: 30px;
+}
+#stop {
+	width: auto;
+	box-shadow: 3px 4px yellow;
+	border-radius: 15px;
+	height: 30px;
+}
+#subir {
+	width: auto;
+	box-shadow: 3px 4px yellow;
+	border-radius: 15px;
+	height: 30px;
+}
+#bajar {
+	width: auto;
+	box-shadow: 3px 4px yellow;
+	border-radius: 15px;
+	height: 30px;
+}

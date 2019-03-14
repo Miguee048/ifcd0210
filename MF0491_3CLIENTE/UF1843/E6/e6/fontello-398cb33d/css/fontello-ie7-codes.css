@@ -1,0 +1,10 @@
+
+.icon-indent-left { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe800;&nbsp;'); }
+.icon-list { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe801;&nbsp;'); }
+.icon-home { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe802;&nbsp;'); }
+.icon-trophy { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe803;&nbsp;'); }
+.icon-award { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe804;&nbsp;'); }
+.icon-help-circled { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe805;&nbsp;'); }
+.icon-angle-circled-up { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf139;&nbsp;'); }
+.icon-newspaper { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf1ea;&nbsp;'); }
+.icon-cc-discover { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf1f2;&nbsp;'); }
