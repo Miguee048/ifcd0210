@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="E1">
+  <ClassDiagramComponents>
+    <Class name="Cliente" package="" visibility="public" xPosition="170.0" yPosition="58.0">
+      <Fields>
+        <Field name="Nombre" type="string" visibility="private"/>
+        <Field name="Apellido" type="string" visibility="private"/>
+        <Field name="Direccion" type="string" visibility="private"/>
+        <Field name="Telefono" type="string" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="Reserva" package="" visibility="public" xPosition="492.0" yPosition="58.0">
+      <Fields>
+        <Field name="idReserva" type="integer" visibility="private"/>
+        <Field name="FechaInicio" type="date" visibility="private"/>
+        <Field name="FechaFinal" type="date" visibility="private"/>
+        <Field name="Precio" type="integer" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="Coche" package="" visibility="public" xPosition="1000.0" yPosition="58.0">
+      <Fields>
+        <Field name="idCoche" type="integer" visibility="private"/>
+        <Field name="marca" type="integer" visibility="private"/>
+        <Field name="modelo" type="integer" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="Disponibilidad" returnType="integer" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Forma de pago" package="" visibility="public" xPosition="170.0" yPosition="467.0">
+      <Fields>
+        <Field name="FormaPago" type="integer" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="Pagar" returnType="integer" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Tarjeta" package="" visibility="public" xPosition="334.0" yPosition="296.0">
+      <Fields>
+        <Field name="PrecioTarjeta" type="integer" visibility="private"/>
+        <Field name="Tarjeta" type="integer" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="Contado" package="" visibility="public" xPosition="12.0" yPosition="296.0">
+      <Fields>
+        <Field name="PrecioContado" type="integer" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="Confirmación" package="" visibility="public" xPosition="728.0" yPosition="58.0">
+      <Fields>
+        <Field name="idConfirmacion" type="integer" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods/>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <HasRelation name="falta" source="Reserva" target="Confirmación" type="Composition" sourceCardinality="0..1" targetCardinality="1..*" collectionType="List"/>
+    <HasRelation name="hace" source="Cliente" target="Reserva" type="Default" sourceCardinality="0..1" targetCardinality="1..*" collectionType="List"/>
+    <UseRelation name="pago por" source="Cliente" target="Tarjeta" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <IsRelation name="is" source="Tarjeta" target="Forma de pago"/>
+    <IsRelation name="is" source="Contado" target="Forma de pago"/>
+    <UseRelation name="pago por" source="Cliente" target="Contado" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="formada por " source="Confirmación" target="Coche" type="Aggregation" sourceCardinality="0..1" targetCardinality="1..*" collectionType="List"/>
+  </ClassDiagramRelations>
+</ClassDiagram>
