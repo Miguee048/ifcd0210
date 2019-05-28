@@ -1,0 +1,182 @@
+<?xml version='1.0' encoding='UTF-8'?><!-- Published by JAX-WS RI (http://jax-ws.java.net). RI's version is Metro/2.3.1-b419 (branches/2.3.1.x-7937; 2014-08-04T08:11:03+0000) JAXWS-RI/2.2.10-b140803.1500 JAXWS-API/2.2.11 JAXB-RI/2.2.10-b140802.1033 JAXB-API/2.2.12-b140109.1041 svn-revision#unknown. --><xs:schema xmlns:tns="http://servicio.webservice/" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" targetNamespace="http://servicio.webservice/">
+
+<xs:element name="Cos" type="tns:Cos"/>
+
+<xs:element name="CosResponse" type="tns:CosResponse"/>
+
+<xs:element name="Dividir" type="tns:Dividir"/>
+
+<xs:element name="DividirResponse" type="tns:DividirResponse"/>
+
+<xs:element name="Logaritmo" type="tns:Logaritmo"/>
+
+<xs:element name="LogaritmoResponse" type="tns:LogaritmoResponse"/>
+
+<xs:element name="Multiplicar" type="tns:Multiplicar"/>
+
+<xs:element name="MultiplicarResponse" type="tns:MultiplicarResponse"/>
+
+<xs:element name="Neperiano" type="tns:Neperiano"/>
+
+<xs:element name="NeperianoResponse" type="tns:NeperianoResponse"/>
+
+<xs:element name="Raiz" type="tns:Raiz"/>
+
+<xs:element name="RaizResponse" type="tns:RaizResponse"/>
+
+<xs:element name="Restar" type="tns:Restar"/>
+
+<xs:element name="RestarResponse" type="tns:RestarResponse"/>
+
+<xs:element name="Sin" type="tns:Sin"/>
+
+<xs:element name="SinResponse" type="tns:SinResponse"/>
+
+<xs:element name="Sumar" type="tns:Sumar"/>
+
+<xs:element name="SumarResponse" type="tns:SumarResponse"/>
+
+<xs:element name="Tan" type="tns:Tan"/>
+
+<xs:element name="TanResponse" type="tns:TanResponse"/>
+
+<xs:element name="hello" type="tns:hello"/>
+
+<xs:element name="helloResponse" type="tns:helloResponse"/>
+
+<xs:complexType name="Logaritmo">
+<xs:sequence>
+<xs:element name="num1" type="xs:double" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="LogaritmoResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:double" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="Dividir">
+<xs:sequence>
+<xs:element name="num1" type="xs:int" minOccurs="0"/>
+<xs:element name="num2" type="xs:int" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="DividirResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:int" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="Sumar">
+<xs:sequence>
+<xs:element name="num1" type="xs:int" minOccurs="0"/>
+<xs:element name="num2" type="xs:int" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="SumarResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:int" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="Multiplicar">
+<xs:sequence>
+<xs:element name="num1" type="xs:int" minOccurs="0"/>
+<xs:element name="num2" type="xs:int" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="MultiplicarResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:int" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="Tan">
+<xs:sequence>
+<xs:element name="num1" type="xs:double" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="TanResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:double" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="Neperiano">
+<xs:sequence>
+<xs:element name="num1" type="xs:double" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="NeperianoResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:double" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="Cos">
+<xs:sequence>
+<xs:element name="num1" type="xs:double" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="CosResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:double" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="Raiz">
+<xs:sequence>
+<xs:element name="num1" type="xs:double" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="RaizResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:double" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="Sin">
+<xs:sequence>
+<xs:element name="num1" type="xs:double" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="SinResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:double" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="hello">
+<xs:sequence>
+<xs:element name="name" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="helloResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="Restar">
+<xs:sequence>
+<xs:element name="num1" type="xs:int" minOccurs="0"/>
+<xs:element name="num2" type="xs:int" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="RestarResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:int" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+</xs:schema>
